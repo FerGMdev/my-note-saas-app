@@ -1,0 +1,8 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": ["warn"], // Cambia a "warn" para advertencias en lugar de errores
+    "@typescript-eslint/no-empty-interface": "off", // Desactiva la regla para interfaces vacías
+    "@typescript-eslint/no-empty-object-type": "off" // Desactiva la regla para tipos de objeto vacíos
+  }
+}
