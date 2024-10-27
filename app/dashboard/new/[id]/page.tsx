@@ -42,7 +42,7 @@ export default async function EditNotePage({
   const user = await getUser();
   const userId = user?.id as string;
 
-  const data = await getData({ userId, noteId: params.id });
+  const data = await getData({ userId: user?.id as string, noteId: params.id });
 
   async function postData(formData: FormData) {
     "use server";
